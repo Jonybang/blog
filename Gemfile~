@@ -48,17 +48,18 @@ end
 gem 'blogo'
 gem "redcarpet"
 
-gem 'capistrano', '~> 3.1.0'
+group :development do
+    gem 'capistrano',         require: false
+    gem 'capistrano-rvm',     require: false
+    gem 'capistrano-rails',   require: false
+    gem 'capistrano-bundler', require: false
+    gem 'capistrano3-puma',   require: false
+end
 
-# rails specific capistrano funcitons
-gem 'capistrano-rails', '~> 1.1.0'
-
-# integrate bundler with capistrano
-gem 'capistrano-bundler'
-
-# if you are using RBENV
-gem 'capistrano-rvm'
+gem 'puma'
 
 # Use the Unicorn app server
 gem 'unicorn'
 
+gem 'dotenv-rails', :require => 'dotenv/rails-now'
+gem 'gem-that-requires-env-variables'

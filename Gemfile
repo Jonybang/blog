@@ -48,6 +48,8 @@ end
 gem 'blogo'
 gem "redcarpet"
 
+gem 'dotenv-rails', :require => 'dotenv/rails-now'
+
 group :development do
     gem 'capistrano',         require: false
     gem 'capistrano-rvm',     require: false
@@ -60,4 +62,3 @@ gem 'puma'
 
 # Use the Unicorn app server
 gem 'unicorn'
-
