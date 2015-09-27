@@ -7,6 +7,7 @@ set :repo_url, 'git@github.com:jonybang/blog.git'
 set :assets_roles, [:app]
 
 set :pty, true
+set :use_sudo, false
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
