@@ -5,9 +5,9 @@
 # unless any hosts have the primary property set.
 # Don't declare `role :all`, it's a meta role
 
-role :app, %w{rails@jonybang.ru}
-role :web, %w{rails@jonybang.ru}
-role :db,  %w{rails@jonybang.ru}
+role :app, %w{rails@jonybang.com}
+role :web, %w{rails@jonybang.com}
+role :db,  %w{rails@jonybang.com}
 
 # used in case we're deploying multiple versions of the same
 # app side by side. Also provides quick sanity checks when looking
