@@ -6,7 +6,7 @@ set :repo_url, 'git@github.com:jonybang/blog.git'
 
 set :assets_roles, [:app]
 
-set :pty, true
+set :pty, false
 set :use_sudo, false
 
 # Default branch is :master
