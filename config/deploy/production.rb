@@ -37,7 +37,6 @@ set :unicorn_worker_count, 5
 # whether we're using ssl or not, used for building nginx
 # config file
 set :enable_ssl, false
-set :use_sudo, false
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
