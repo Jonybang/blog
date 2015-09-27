@@ -14,6 +14,7 @@ role :db,  %w{rails@jonybang.ru}
 # at filepaths
 set :full_app_name, "#{fetch(:application)}_#{fetch(:stage)}"
 set :server_name, "www.jonybang.ru jonybang.ru"
+set :deploy_user, "rails"
 
 # Extended Server Syntax
 # ======================
