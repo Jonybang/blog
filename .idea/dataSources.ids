@@ -59,4 +59,10 @@
       <column name="seq" sqlType="" precision="2000000000" scale="10" nullable="true" jdbcType="12"/>
     </table>
   </data-source>
+  <data-source source="LOCAL" name="Rails blog: test" uuid="9450c9ef-446e-45ae-a038-fff691f03afa">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails blog: production" uuid="2e66ad05-447a-4285-9591-90e2256b7db0">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>
