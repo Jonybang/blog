@@ -20,6 +20,6 @@ test:
 
 production:
   <<: *default
-  database: blog_production
-  username: rails
-  password: EtEFLwG7J2yO9V2
+  database:blog_production
+  username:deploy
+  password:EtEFLwG7J2yO9V2
