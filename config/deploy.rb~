@@ -83,6 +83,7 @@ end
   after  :finishing,    :compile_assets
   after  :finishing,    :cleanup
   after  :finishing,    :restart
+  after :deploy, :mark_revision
 end
 
 # ps aux | grep puma    # Get puma pid
