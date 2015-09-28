@@ -20,6 +20,7 @@ require 'capistrano/bundler'
 require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
 require 'capistrano/puma'
+require 'capistrano/secrets_yml'
 require 'dotenv'
 require 'dotenv/tasks'
 
