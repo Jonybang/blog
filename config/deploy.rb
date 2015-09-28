@@ -58,11 +58,6 @@ namespace :deploy do
       end
     end
   end
-task :mark_revision do
-  log = "#{deploy_to}/revisions.log"
-  run "(test -e #{log} || touch #{log} && chmod 666 #{log}) && " +
-  "echo #{latest_revision} >> #{log};"
-end
 
   desc 'Initial Deploy'
   task :initial do
@@ -83,7 +78,6 @@ end
   after  :finishing,    :compile_assets
   after  :finishing,    :cleanup
   after  :finishing,    :restart
-  after :deploy, :mark_revision
 end
 
 # ps aux | grep puma    # Get puma pid
