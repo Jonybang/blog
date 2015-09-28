@@ -6,7 +6,7 @@
 # Don't declare `role :all`, it's a meta role
 
 
-set :pg_user, "deploy"
+#set :pg_user, "deploy"
 
 # role :app, %w{rails@jonybang.ru}
 # # role :web, %w{rails@jonybang.ru}
