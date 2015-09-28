@@ -21,6 +21,7 @@ require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
 require 'capistrano/puma'
 require 'capistrano/secrets_yml'
+require 'capistrano/postgresql'
 require 'dotenv'
 require 'dotenv/tasks'
 
