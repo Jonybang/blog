@@ -15,3 +15,7 @@
  *= require blogo/ckeditor/skins/moono/editor.css
  *= require highlight.min
  */
+
+code.hljs {
+    font-size: 11px;
+}
