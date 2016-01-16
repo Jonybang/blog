@@ -13,4 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require highlight
 //= require_tree .
+
+$(document).ready(function() {
+    $('.blogo-article pre').each(function(i, block) {
+        //hljs.highlightAuto($(block).text(), ['javascript', 'php', 'ruby', 'html', 'css'])
+        hljs.highlightBlock(block);
+    });
+});

@@ -13,4 +13,5 @@
  *= require_tree .
  *= require_self
  *= require blogo/ckeditor/skins/moono/editor.css
+ *= require highlight.min
  */
