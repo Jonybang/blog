@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20150926091025) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "blogo_posts", force: :cascade do |t|
     t.integer  "user_id",          null: false
     t.string   "permalink",        null: false
@@ -30,16 +33,16 @@ ActiveRecord::Schema.define(version: 20150926091025) do
     t.datetime "updated_at"
   end
 
-  add_index "blogo_posts", ["permalink"], name: "index_blogo_posts_on_permalink", unique: true
-  add_index "blogo_posts", ["published_at"], name: "index_blogo_posts_on_published_at"
-  add_index "blogo_posts", ["user_id"], name: "index_blogo_posts_on_user_id"
+  add_index "blogo_posts", ["permalink"], name: "index_blogo_posts_on_permalink", unique: true, using: :btree
+  add_index "blogo_posts", ["published_at"], name: "index_blogo_posts_on_published_at", using: :btree
+  add_index "blogo_posts", ["user_id"], name: "index_blogo_posts_on_user_id", using: :btree
 
   create_table "blogo_taggings", force: :cascade do |t|
     t.integer "post_id", null: false
     t.integer "tag_id",  null: false
   end
 
-  add_index "blogo_taggings", ["tag_id", "post_id"], name: "index_blogo_taggings_on_tag_id_and_post_id", unique: true
+  add_index "blogo_taggings", ["tag_id", "post_id"], name: "index_blogo_taggings_on_tag_id_and_post_id", unique: true, using: :btree
 
   create_table "blogo_tags", force: :cascade do |t|
     t.string   "name",       null: false
@@ -47,7 +50,7 @@ ActiveRecord::Schema.define(version: 20150926091025) do
     t.datetime "updated_at"
   end
 
-  add_index "blogo_tags", ["name"], name: "index_blogo_tags_on_name", unique: true
+  add_index "blogo_tags", ["name"], name: "index_blogo_tags_on_name", unique: true, using: :btree
 
   create_table "blogo_users", force: :cascade do |t|
     t.string   "name",            null: false
@@ -57,6 +60,6 @@ ActiveRecord::Schema.define(version: 20150926091025) do
     t.datetime "updated_at"
   end
 
-  add_index "blogo_users", ["email"], name: "index_blogo_users_on_email", unique: true
+  add_index "blogo_users", ["email"], name: "index_blogo_users_on_email", unique: true, using: :btree
 
 end

@@ -10,14 +10,14 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
+//= require jquery.js
 //= require jquery_ujs
 //= require turbolinks
 //= require highlight.min.js
 //= require_tree .
 
 $(document).ready(function() {
-    $('.blogo-article pre').each(function(i, block) {
+    $('.blogo-article code').each(function(i, block) {
         //hljs.highlightAuto($(block).text(), ['javascript', 'php', 'ruby', 'html', 'css'])
         hljs.highlightBlock(block);
     });

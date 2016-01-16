@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @meta[:title] %></title>
+  <meta charset="UTF-8">
+
+  <%= render partial: 'blogo/shared/meta' %>
+
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag "blogo/blog" %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <%= auto_discovery_link_tag :atom, blogo_feed_path %>
+  <%= render 'blogo/shared/google_analytics' %>
+</head>
+<body>
+  <div id="container">
+    <header class="blogo-header">
+      <div class='header-titles'>
+        <h1><%= link_to Blogo.config.site_title, blogo_root_path %></h1>
+        <h2><%= Blogo.config.site_subtitle %></h2>
+      </div>
+
+      <div class='header-icons'>
+        <%= render partial: 'blogo/shared/social_icons' %>
+      </div>
+    </header>
+
+    <div id="content">
+      <div class="pure-g-r">
+        <div class="pure-u-3-4">
+          <%= yield %>
+        </div>
+
+        <div class="pure-u-1-4">
+          <%= render partial: 'blogo/shared/aside' %>
+        </div>
+      </div>
+
+      <div class="pure-g-r">
+        <div class="pure-u-1-1">
+          <%= link_to "Powered by Blogo", Blogo::HOME_PAGE_URL, class: "powered-by" %>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
