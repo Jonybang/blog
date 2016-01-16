@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require highlight
+//= require highlight.min.js
 //= require_tree .
 
 $(document).ready(function() {
