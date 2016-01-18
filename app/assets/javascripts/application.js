@@ -16,9 +16,12 @@
 //= require highlight.min.js
 // require_tree .
 
-$(document).ready(function() {
+var ready = function() {
     $('.blogo-article code').each(function(i, block) {
         //hljs.highlightAuto($(block).text(), ['javascript', 'php', 'ruby', 'html', 'css'])
         hljs.highlightBlock(block);
     });
-});
+};
+
+$(document).ready(ready);
+$(document).on('page:load', ready);
