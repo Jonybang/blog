@@ -2,10 +2,11 @@
 
 <div class="pure-g-r form-new-post">
   <div class="pure-u-17-24">
-    <div class="left-fields"^>
+    <div class="left-fields">
       <%= f.text_field :title, required: true, id: 'post-title', placeholder: t('blogo.admin.post_title') %>
-
-      <%= f.text_area :raw_content, class: 'ckeditor', required: true %>
+      <div id="blogo-editor-container">
+        <%= f.text_area :raw_content, class: 'ckeditor', id: 'blogo-editor', required: true %>
+      </div>
 
       <%= f.text_field :tags_string, placeholder: t('blogo.admin.tags_separated_with_commas') %>
     </div>

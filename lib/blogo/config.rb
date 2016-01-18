@@ -18,6 +18,7 @@ module Blogo
     attr_accessor :google_analytics_id
 
     attr_accessor :use_ckeditor
+    attr_accessor :use_markdown
 
     attr_reader :markup_lang
 

@@ -2,6 +2,10 @@
   <%= render partial: 'blogo/posts/post_header', locals: {post: @post} %>
 
   <div class="content">
-    <%= raw @post.html_content %>
+    <% if Blogo.config.use_markdown %>
+        <%= markdown @post.html_content %>
+    <% else %>
+        <%= raw @post.html_content %>
+    <% end %>
   </div>
 </article>

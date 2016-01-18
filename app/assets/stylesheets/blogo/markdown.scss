@@ -1,0 +1,12 @@
+@import 'base/epiceditor';
+@import 'preview/bartik';
+@import 'preview/github';
+@import 'preview/preview-dark';
+@import 'editor/epic-dark';
+@import 'editor/epic-light';
+
+#blogo-editor-container iframe{
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+}

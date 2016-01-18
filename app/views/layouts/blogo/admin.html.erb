@@ -8,6 +8,11 @@
     <%= javascript_include_tag "blogo/admin/ckeditor" %>
   <% end %>
 
+  <% if Blogo.config.use_markdown %>
+      <%= javascript_include_tag "blogo/admin/markdown" %>
+      <%= stylesheet_link_tag "blogo/markdown" %>
+  <% end %>
+
   <%= stylesheet_link_tag "blogo/admin" %>
   <%= csrf_meta_tags %>
 </head>

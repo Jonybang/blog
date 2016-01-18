@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
+ruby '2.2.3'
 
+gem 'redcarpet'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -64,3 +66,5 @@ gem 'puma'
 
 # Use the Unicorn app server
 gem 'unicorn'
+
+gem 'epic-editor-rails'

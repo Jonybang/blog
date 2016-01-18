@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require highlight.min.js
-//= require_tree .
+// require_tree .
 
 $(document).ready(function() {
     $('.blogo-article code').each(function(i, block) {

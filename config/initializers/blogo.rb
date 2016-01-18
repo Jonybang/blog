@@ -11,7 +11,9 @@ Blogo.configure do |config|
   config.recent_posts =  3
 
   # Maybe you do not want to use CKEditor, if you use markdown
-  config.use_ckeditor = true
+  config.use_ckeditor = false
+
+  config.use_markdown = true
 
   config.show_rss_icon = true
 
