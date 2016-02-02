@@ -19,3 +19,9 @@
 code.hljs {
     font-size: 11px;
 }
+.blogo-article code {
+    display: inline;
+}
+.blogo-article br + code, .blogo-article pre code {
+    display: block;
+}
