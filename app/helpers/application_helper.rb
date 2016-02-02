@@ -1,6 +1,7 @@
 class BlogHtml < Redcarpet::Render::HTML
   def codespan(code)
     if code.include? "\n"
+      code[0,1] = '' if code[0,1] == "\n"
       "<pre><code>#{code}</code></pre>"
     else
       "<code>#{code}</code>"
