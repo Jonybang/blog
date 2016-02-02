@@ -19,6 +19,13 @@
 code.hljs {
     font-size: 11px;
 }
+.blogo-article {
+    color: #444;
+    text-align: justify;
+    margin-bottom: 1.5em;
+    font-size: 1em;
+    line-height: 1.5em;
+}
 .blogo-article p {
     margin: 10px 0;
 }
