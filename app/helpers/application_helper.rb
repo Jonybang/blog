@@ -11,11 +11,6 @@ end
 
 module ApplicationHelper
   def markdown(text)
-    render_options = {
-        hard_wrap: true,
-        prettify: true,
-        with_toc_data: true
-    }
     markdown_options = {
         autolink: true,
         no_intra_emphasis: true,
@@ -24,7 +19,13 @@ module ApplicationHelper
         strikethrough: true,
         superscript: true,
         space_after_headers: true,
-        disable_indented_code_blocks: false
+        disable_indented_code_blocks: false,
+        tables: true
+    }
+    render_options = {
+        hard_wrap: true,
+        prettify: true,
+        with_toc_data: true
     }
     Redcarpet::Markdown.new(BlogHtml.new(render_options), markdown_options).render(text).html_safe
   end
