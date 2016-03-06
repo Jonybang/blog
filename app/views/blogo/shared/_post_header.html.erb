@@ -1,5 +1,9 @@
 <header>
-  <h1><%= link_to post.title, blogo_post_path(post) %></h1>
+  <%if @class_name =='Post'%>
+    <h1><%= link_to post.title, blogo_post_path(post) %></h1>
+  <%- elsif @class_name =='Project' %>
+      <h1><%= link_to post.title, blogo_project_path(post) %></h1>
+  <% end %>
 
   <div class="posted">
     <span>
