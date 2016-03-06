@@ -1,7 +1,7 @@
 <section class="blogo-article article-overview">
   <%= render partial: 'blogo/shared/post_header', locals: {post: post} %>
 
-  <%= render partial: 'blogo/shared/post_content', locals: {post: post} %>
+  <%= render partial: 'blogo/shared/post_content', locals: {post: post, overview: true} %>
 
   <%= link_to t('blogo.user.read_post'), blogo_post_path(post), class: 'pure-button button-secondary' %>
 </section>

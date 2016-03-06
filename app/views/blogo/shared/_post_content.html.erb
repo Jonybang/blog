@@ -1,7 +1,7 @@
 <div class="content">
   <% if Blogo.config.use_markdown %>
-      <%= markdown post_overview(post) %>
+      <%= markdown (overview ? post_overview(post) : post_content(post)) %>
   <% else %>
-      <%= raw post_overview(post) %>
+      <%= raw (overview ? post_overview(post) : post_content(post)) %>
   <% end %>
 </div>
