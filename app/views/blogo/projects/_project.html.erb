@@ -1,0 +1,15 @@
+<article class="blogo-article">
+  <%= render partial: 'blogo/shared/post_header', locals: {post: @_resource} %>
+
+  <div class="slick-slider">
+    <%- @_resource.attachments.each do |attach| %>
+        <div>
+          <a href="<%=attach.file.url(:medium)%>" data-lightbox="project-<%=@_resource.id%>" data-title="<%=@_resource.title%>">
+            <img src="<%=attach.file.url(:thumb)%>" alt="" style="display: block; width: 100%;">
+          </a>
+        </div>
+    <% end %>
+  </div>
+
+  <%= render partial: 'blogo/shared/post_content', locals: {post: @_resource} %>
+</article>

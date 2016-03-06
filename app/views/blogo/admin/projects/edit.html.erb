@@ -1,0 +1,5 @@
+<h1 class="admin-header"><%= t('blogo.admin.edit_project') %></h1>
+
+<%= simple_nested_form_for [:blogo, :admin, @project], method: :patch, html: {id: 'post-form', class: 'pure-form pure-form-stacked'} do |f| %>
+  <%= render partial: 'form', locals: {f: f} %>
+<% end %>

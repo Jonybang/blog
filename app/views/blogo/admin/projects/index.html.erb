@@ -1,0 +1,18 @@
+<h1 class="admin-header"><%=link_to t('posts'), :blogo_admin_posts%> / <%= t('blogo.admin.projects') %></h1>
+
+<table class="pure-table pure-table-striped">
+  <thead>
+    <tr>
+      <th><%= t('blogo.admin.title') %></th>
+      <th><%= t('blogo.admin.status') %></th>
+      <th><%= t('blogo.admin.author') %></th>
+      <th><%= t('blogo.admin.published_on') %></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @projects.each do |project|%>
+      <%= render partial: 'project_li', locals: {post: project} %>
+    <% end %>
+  </tbody>
+</table>

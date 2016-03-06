@@ -1,0 +1,5 @@
+<h1 class="admin-header"><%= t('blogo.admin.add_new_project') %></h1>
+
+<%= simple_nested_form_for @project, :url => blogo_admin_projects_path, html: {id: 'post-form', class: 'pure-form pure-form-stacked'} do |f| %>
+  <%= render partial: 'form', locals: {f: f} %>
+<% end %>

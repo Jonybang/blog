@@ -14,6 +14,9 @@
  *= require_self
  *= require blogo/ckeditor/skins/moono/editor.css
  *= require highlight.min
+ *= require lightbox.min
+ *= require slick
+ *= require slick-theme
  */
 
 code.hljs {
@@ -34,4 +37,31 @@ code.hljs {
 }
 .blogo-article pre code {
     display: block !important;
+}
+.blogo-article .project {
+    margin-bottom: 10px;
+}
+.blogo-article .project .content{
+    padding-left: 10px;
+}
+.blogo-article p:first-child{
+    margin-top: 0;
+}
+
+.pure-menu ul {
+    visibility: visible;
+    left: 0;
+    top: 0;
+}
+
+.slick-slide {
+    padding: 10px;
+}
+
+.slick-slide img {
+    height: 200px;
+    width: auto;
+}
+.article-overview .project img{
+    margin-bottom: 5px;
 }

@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="438972886">
-    <data-source source="LOCAL" name="Rails blog: development" uuid="0b5994f6-0bff-4705-bd68-8f16c8b79d95">
-      <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1/blog_development</jdbc-url>
-      <user-name>rails</user-name>
-      <user-password>dff8dfc3df9bdf93df98df92df99df9d</user-password>
-      <libraries />
-    </data-source>
-    <data-source source="LOCAL" name="Rails blog: test" uuid="9450c9ef-446e-45ae-a038-fff691f03afa">
+  <component name="DataSourceManagerImpl" format="xml" hash="3684980166">
+    <data-source source="LOCAL" name="PostgreSQL - blog_development@localhost" uuid="fe8b38d5-27ec-4dea-9de2-51558e9e6668">
       <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1/blog_test</jdbc-url>
-      <libraries />
-    </data-source>
-    <data-source source="LOCAL" name="Rails blog: production" uuid="2e66ad05-447a-4285-9591-90e2256b7db0">
-      <driver-ref>postgresql</driver-ref>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1/blog_production</jdbc-url>
-      <user-name>deploy</user-name>
-      <user-password>dfefdfdedfefdfecdfe6dfdddfeddf9ddfe0df98dfd3dfe5df93dffcdf98</user-password>
-      <libraries />
+      <jdbc-url>jdbc:postgresql://localhost:5432/blog_development</jdbc-url>
     </data-source>
   </component>
 </project>
-

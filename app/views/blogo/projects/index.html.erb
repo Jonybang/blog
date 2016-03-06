@@ -1,0 +1,6 @@
+<div id="main">
+  <% @_collection.each do |project| %>
+    <%= render partial: 'project_overview', locals: {project: project} %>
+  <% end %>
+</div>
+<!--<= render partial: 'blogo/shared/paginator' %>-->

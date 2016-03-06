@@ -48,7 +48,6 @@ group :production do
   gem 'pg'
 end
 gem 'blogo'
-gem "redcarpet"
 
 gem 'dotenv-rails', :require => 'dotenv/rails-now'
 
@@ -68,3 +67,13 @@ gem 'puma'
 gem 'unicorn'
 
 gem 'epic-editor-rails'
+
+gem 'paperclip', '~> 4.3'
+
+gem 'simple_form'
+gem 'nested_form'
+
+
+gem 'responders'
+gem 'rails_stuff'
+gem 'has_scope'

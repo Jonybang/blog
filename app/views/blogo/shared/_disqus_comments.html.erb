@@ -8,9 +8,9 @@
 
   <script type="text/javascript">
     var disqus_shortname  = '<%= Blogo.config.disqus_shortname %>';
-    var disqus_identifier = 'blog-post-<%= @post.id %>';
-    var disqus_url        = '<%= blogo_post_url(@post) %>';
-    var disqus_title      = '<%= @post.title %>';
+    var disqus_identifier = 'blog-post-<%= @_resource.id %>';
+    var disqus_url        = '<%= blogo_post_url(@_resource) %>';
+    var disqus_title      = '<%= @_resource.title %>';
     var disqus_script     = 'embed.js';
 
     (function () {

@@ -10,7 +10,6 @@
   <%= stylesheet_link_tag "blogo/blog" %>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
   <%= auto_discovery_link_tag :atom, blogo_feed_path %>
   <%= render 'blogo/shared/google_analytics' %>
@@ -31,6 +30,14 @@
     <div id="content">
       <div class="pure-g-r">
         <div class="pure-u-3-4">
+
+          <div class="pure-menu pure-menu-horizontal">
+            <ul class="pure-menu-list">
+              <li class="pure-menu-item <%=@class_name =='Post' ? 'pure-menu-selected' : '' %>"><a href="/" class="pure-menu-link">Блог</a></li>
+              <li class="pure-menu-item <%=@class_name =='Project' ? 'pure-menu-selected' : '' %>"><a href="/projects" class="pure-menu-link">Проекты</a></li>
+            </ul>
+          </div>
+
           <%= yield %>
         </div>
 
@@ -47,5 +54,6 @@
     </div>
 
   </div>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>

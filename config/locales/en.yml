@@ -1,23 +1,61 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  blogo:
+    user:
+      comments: 'Comments'
+      please_enable_javascript: 'Please enable JavaScript to view the comments.'
+      post_by: 'By'
+      read_post: 'Read ➞'
+      recent_posts: 'Recent posts'
+      tags: 'Tags'
+
+    admin:
+      add_new_project: 'Add a new project'
+      author: 'Author'
+      comments: 'Comments'
+      delete_post_button: 'delete'
+      delete_project_button: 'delete'
+      edit_post: 'Edit post'
+      edit_project: 'Edit project'
+      edit_post_button: 'edit'
+      edit_project_button: 'edit'
+      email: 'Email'
+      image_already_exists: 'Image with name "%{image_name}" already exists'
+      logged_in: 'You have logged in'
+      logged_out: 'You have logged out'
+      login: 'Login'
+      login_button: 'Login'
+      login_fail: 'Incorrect email or password'
+      modal_confirm_delete_post: 'Are you sure you want to delete "%{post_title}"?'
+      modal_confirm_delete_project: 'Are you sure you want to delete "%{project_title}"?'
+      modal_title_close_preview: 'Close preview'
+      new_post: 'New Post'
+      new_project: 'New Project'
+      password: 'Password'
+      project_created: 'The project is created'
+      project_removed: 'The project is removed'
+      post_created: 'The post is created'
+      post_removed: 'The post is removed'
+      post_status_draft: 'draft'
+      project_status_draft: 'draft'
+      post_status_published: 'published'
+      project_status_published: 'published'
+      project_title: 'Project Title'
+      post_title: 'Post Title'
+      project_updated: 'The project is updated'
+      post_updated: 'The post is updated'
+      projects: 'Projects'
+      posts: 'Posts'
+      preview_post_button: 'Preview'
+      preview_project_button: 'Project'
+      preview_press_esc: 'Preview. Press ESC to back.'
+      publish: 'Publish'
+      published_on: 'Published on'
+      save_post_button: 'Save'
+      save_project_button: 'Save'
+      sign_out: 'Sign out'
+      status: 'Status'
+      tags_separated_with_commas: 'Tags separated with commas'
+      title: 'Title'
+      today: 'Today'
+      unique_permalink: 'unique-permalink'
+      recent_comments: 'Recent comments'

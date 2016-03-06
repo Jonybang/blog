@@ -12,6 +12,8 @@
 //
 //= require jquery.js
 //= require jquery_ujs
+//= require lightbox.min
+//= require slick.min
 //= require turbolinks
 //= require highlight.min.js
 // require_tree .
@@ -20,6 +22,19 @@ var ready = function() {
     $('.blogo-article code').each(function(i, block) {
         //hljs.highlightAuto($(block).text(), ['javascript', 'php', 'ruby', 'html', 'css'])
         hljs.highlightBlock(block);
+    });
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    })
+
+    $('.slick-slider').slick({
+        dots: true,
+        speed: 300,
+        variableWidth: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
     });
 };
 

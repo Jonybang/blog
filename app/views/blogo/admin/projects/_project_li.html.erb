@@ -1,0 +1,14 @@
+<%
+  confirm_message = t('blogo.admin.modal_confirm_delete_project', project_title: post.title)
+%>
+
+<tr>
+  <td><%= link_to post.title, edit_blogo_admin_project_path(post) %></td>
+  <td><%= t("blogo.admin.project_status_#{post.status}") %></td>
+  <td><%= post.user.name %></td>
+  <td><%= l(post.published_at.to_date) %></td>
+  <td>
+    <%= link_to t('blogo.admin.edit_project_button'), edit_blogo_admin_project_path(post), class: "pure-button  button-secondary" %>
+    <%= link_to t('blogo.admin.delete_project_button'), blogo_admin_project_path(post), method: :delete, data: {confirm: confirm_message}, class: "pure-button  button-warning" %>
+  </td>
+</tr>

@@ -1,3 +1,5 @@
+require "#{Rails.root}/lib/blogo/routes"
+
 Blogo.configure do |config|
   # Edit this to match the subject of your blog
   config.site_title    = 'Пан Евгениус. Блог.'
